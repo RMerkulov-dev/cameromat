@@ -85,7 +85,7 @@ img {
 /* MOBILE */
 @media screen and (min-width: 390px) {
   body {
-    background-image: url("/images/background/background-mob.jpg");
+    background-image: url("../images/background/background-mob.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -162,7 +162,7 @@ img {
 /* TABLET */
 @media screen and (min-width: 739px) {
   body {
-    background-image: url("/images/background/background-tablet.jpg");
+    background-image: url("../images/background/background-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -194,7 +194,7 @@ img {
 /* DESKTOP */
 @media screen and (min-width: 1439px) {
   body {
-    background-image: url("/images/background/background-desk.jpg");
+    background-image: url("../images/background/background-desk.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
