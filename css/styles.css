@@ -160,8 +160,6 @@ img {
 @media screen and (min-width: 739px) {
   body {
     background-image: url("../images/background/tablet.png");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .main-section {
     padding: 120px 0 565px 0;
@@ -192,8 +190,6 @@ img {
 @media screen and (min-width: 1439px) {
   body {
     background-image: url("../images/background/desk.png");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .main-section {
     padding: 120px 0 399px 0;
