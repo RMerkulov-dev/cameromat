@@ -1,0 +1,220 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Roboto", Tahoma, sans-serif;
+  color: var(--main-text--color);
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* //========= FONTS ==============// */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* //========= ROOT AND CONTAINER ==============// */
+:root {
+  --main-text--color: #ffffff;
+}
+@media screen and (min-width: 390px) {
+  .container {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 744px) {
+  .container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+}
+
+/* //========= STYLES ==============// */
+
+/* MOBILE */
+@media screen and (min-width: 390px) {
+  body {
+    background-image: url("/images/background/background-mob.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main-section {
+    padding: 84px 0 356px 0;
+  }
+  .main-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .main-text {
+    margin-top: 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--main-text--color);
+  }
+  .line {
+    position: relative;
+    padding-top: 12px;
+  }
+  .line:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--main-text--color);
+  }
+  .footer-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .footer-list > li > p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+  }
+  .footer-list > li > a {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.8;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: var(--main-text--color);
+  }
+  .link {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: underline;
+    font-size: 16px;
+    line-height: 1.8;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: var(--main-text--color);
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 739px) {
+  body {
+    background-image: url("/images/background/background-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main-section {
+    padding: 120px 0 565px 0;
+  }
+  .logo-image {
+    width: 256px;
+    height: 94px;
+  }
+  .main-text {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .footer-list {
+    gap: 16px;
+  }
+  .footer-list > li > p {
+    font-size: 21px;
+  }
+  .footer-list > li > a {
+    font-size: 18px;
+  }
+  .link {
+    font-size: 18px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1439px) {
+  body {
+    background-image: url("/images/background/background-desk.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main-section {
+    padding: 120px 0 399px 0;
+  }
+  .logo-image {
+    width: 348px;
+    height: 132px;
+  }
+  .main-text {
+    font-size: 23px;
+  }
+  .footer-list > li > p {
+    font-size: 24px;
+  }
+  .footer-list > li > a {
+    font-size: 20px;
+  }
+  .link {
+    font-size: 20px;
+  }
+}
