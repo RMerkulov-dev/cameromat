@@ -7,8 +7,8 @@ body {
   overflow-x: hidden;
   font-family: "Roboto", Tahoma, sans-serif;
   color: var(--main-text--color);
-  background: url("../images/background/mobile.png");
-  background-repeat: no-repeat;
+  background: url("../images/background/mobile.png") no-repeat center center
+    fixed;
   background-size: cover;
 }
 a {
