@@ -117,6 +117,9 @@ img {
   height: 1px;
   background-color: var(--main-text--color);
 }
+footer {
+  padding-bottom: 40px;
+}
 .footer-list {
   display: flex;
   align-items: flex-start;
